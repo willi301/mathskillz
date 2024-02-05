@@ -6,6 +6,7 @@ public class mathSkills {
         Scanner input = new Scanner(System.in);
         //data initialization
         int diff;
+        int points;
 
 
         System.out.println("Welcome to the mathskillz, where your math skills is challenged.");
@@ -25,6 +26,9 @@ public class mathSkills {
             default:
                 break;
         }
+
+
+        
 
 
 
