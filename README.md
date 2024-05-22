@@ -1,3 +1,3 @@
 # mathskillz
 
-Using Python to create a simple math quiz guig
+Using Python to create a simple math quiz gui
