@@ -1,3 +1,3 @@
 # mathskillz
 
-Using java to make a random math quiz generator
+Using Python to create a simple math quiz gui
