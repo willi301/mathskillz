@@ -45,7 +45,7 @@ def playGame(diff):
     #prmopt question for hard mode
     elif(diff == "3"):
         while question < 11:
-            result = questions(10, 999, question)
+            result = questions(101, 999, question)
             question += 1
             if(result == 1):
                 total += 1
