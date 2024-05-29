@@ -37,34 +37,29 @@ combo_box = ttk.Combobox(difficulty, values=["Easy", "Medium", "Hard"])
 combo_box.pack(side = LEFT, expand = True, fill = BOTH)
 
 combo_box.set("Choose")
+root.mainloop()
 
 
 
 
+# #functionality is being turned off at the moment
 
+# # welcome user to program
+# print("Hello, World")
 
+# #get input from user
+# diff = 0
+# diff = getDifficulty()
+# # get difficulty
+# match diff:
+#     case 1:
+#         print("You choose: easy")
+#     case 2:
+#         print("You choose: medium")
+#     case 3:
+#         print("You choose: hard")
 
-
-
-#functionality is being turned off at the moment
-
-# welcome user to program
-print("Hello, World")
-
-#get input from user
-diff = 0
-diff = getDifficulty()
-# get difficulty
-match diff:
-    case 1:
-        print("You choose: easy")
-    case 2:
-        print("You choose: medium")
-    case 3:
-        print("You choose: hard")
-
-# run game logic
-point = playGame(diff)
-print("You got : " + str(point) + " points")
-
+# # run game logic
+# point = playGame(diff)
+# print("You got : " + str(point) + " points")
 
