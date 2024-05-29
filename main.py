@@ -8,6 +8,12 @@ import tkinter
 from tkinter import *
 
 
+# function to get event selector
+def on_select(event):
+    selected_item = ttk.Combobox.get()
+    label.config(text="Select difficulty: " + selected_item)
+
+
 # Gui loop
 root = tkinter.Tk()
 root.geometry("500x500")
@@ -36,32 +42,29 @@ combo_box.set("Choose")
 
 
 
-# function to get event selector
-def on_select(event):
-    selected_item = ttk.Combobox.get()
-    label.config(text="Select difficulty: " + selected_item)
+
 
 
 
 #functionality is being turned off at the moment
 
-# # welcome user to program
-# print()
+# welcome user to program
+print("Hello, World")
 
-# #get input from user
-# diff = 0
-# diff = getDifficulty()
-# # get difficulty
-# match diff:
-#     case 1:
-#         print("You choose: easy")
-#     case 2:
-#         print("You choose: medium")
-#     case 3:
-#         print("You choose: hard")
+#get input from user
+diff = 0
+diff = getDifficulty()
+# get difficulty
+match diff:
+    case 1:
+        print("You choose: easy")
+    case 2:
+        print("You choose: medium")
+    case 3:
+        print("You choose: hard")
 
-# # run game logic
-# point = playGame(diff)
-# print("You got : " + str(point) + " points")
+# run game logic
+point = playGame(diff)
+print("You got : " + str(point) + " points")
 
 
