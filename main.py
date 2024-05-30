@@ -13,6 +13,11 @@ def on_select(event):
     selected_item = ttk.Combobox.get()
     label.config(text="Select difficulty: " + selected_item)
 
+# function to enter button difficulty
+def enter():
+    select = combo_box.get()
+    print(select)
+
 
 # Gui loop
 root = tkinter.Tk()
@@ -40,8 +45,11 @@ combo_box.set("Choose")
 
 
 # enter button
-b = Button(root, text="enter", width=30)
+b = Button(root, text="enter", width=30, command=enter)
 b.pack(side= BOTTOM, pady=(0, 50))
+
+
+
 
 
 root.mainloop()
